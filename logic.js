@@ -5,9 +5,8 @@
 let hour=document.getElementById("hourBox"); // gets element by ID
 let minute=document.getElementById("minuteBox");
 let second=document.getElementById("secondBox");
-let hours;
-let date;
 let count=1;
+let is12HourFormat=false;
 
 //toggle button for 24hour and 12 hour switch
 
@@ -17,18 +16,20 @@ let toggleSwitch=document.getElementById("twelveHourFormat");
 function callWhenToggle()
 {
         count++;
-        count%2==0?(toggleSwitch.innerHTML="Switch to 24 Hour Format",hours=date.getHours()%12):(toggleSwitch.innerHTML="Switch to 12 Hour Format",hours=date.getHours());
+        is12HourFormat=count%2===0;
+        toggleSwitch.innerHTML = is12HourFormat
+        ? "Switch to 24 Hour Format"
+        : "Switch to 12 Hour Format";
 }
-
-
-    date=new Date();
-    hours=date.getHours();  //First initialization of time ( Only runs initially)
+    toggleSwitch.addEventListener("click",callWhenToggle);
 
     function updateTime(){
 
-     date=new Date();
+     let date=new Date();
+     let unmodifiedHours=date.getHours();
+     let hours=is12HourFormat?unmodifiedHours%12:unmodifiedHours;
      
-    toggleSwitch.addEventListener("click",callWhenToggle);
+     
     
     let minutes=date.getMinutes();
     let seconds=date.getSeconds();
