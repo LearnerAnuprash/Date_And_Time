@@ -58,3 +58,28 @@ setInterval(updateTime,1000);// 1000 milliseconds =1 second : so the date gets f
 /*-------------------------------------------------------------------------------------------------*/
 //|                      Toggle button For Dark Mode & Light Mode                                 |//
 /*-------------------------------------------------------------------------------------------------*/
+
+let theme=document.getElementById("toggleTheme");
+let countTheme=0;
+
+function funcTheme()
+{
+    if(countTheme%2===0)
+    {
+        theme.innerHTML="Switch to Light Mode";
+        //Styles for Dark theme here:
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1744462071047-34c6b661d3a1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
+    }
+
+    else{
+        theme.innerHTML="Switch to Dark Mode";
+        //Styles for Light theme here:
+        document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1490358930084-2d26f21dc211?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
+        
+    }
+
+    countTheme++;
+
+}
+
+theme.addEventListener("click",funcTheme);
