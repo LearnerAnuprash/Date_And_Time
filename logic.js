@@ -8,6 +8,8 @@ let second=document.getElementById("secondBox");
 let count=1;
 let is12HourFormat=false;
 
+let quote=document.getElementById("quotePhrase");
+
 //toggle button for 24hour and 12 hour switch
 
 let toggleSwitch=document.getElementById("twelveHourFormat");
@@ -69,6 +71,7 @@ function funcTheme()
         theme.innerHTML="Switch to Light Mode";
         //Styles for Dark theme here:
         document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1744462071047-34c6b661d3a1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
+        quote.style.color="white";
 
     }
 
@@ -76,7 +79,7 @@ function funcTheme()
         theme.innerHTML="Switch to Dark Mode";
         //Styles for Light theme here:
         document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1542401886-65d6c61db217?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
-        
+        quote.style.color="rgba(54, 22, 1,0.9)";
     }
 
     countTheme++;
@@ -84,3 +87,4 @@ function funcTheme()
 }
 
 theme.addEventListener("click",funcTheme);
+
