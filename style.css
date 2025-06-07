@@ -92,7 +92,6 @@ button {
 .toggleButton {
     background: linear-gradient(135deg, rgba(255, 145, 77, 0.85), rgba(255, 193, 112, 0.85));
     color: #2d1b00;
-    margin-right:53rem;
 }
 
 .toggleButton:hover {
@@ -132,4 +131,27 @@ button {
     display:grid;
     place-items:center;
     height:30vh;
+}
+
+/* Making Website Responsive*/
+
+@media(max-width:600px) /*Small devices */
+{
+    
+}
+
+@media(min-width:601px) and (max-width:1024px) /* Tablets */
+{
+
+}
+
+@media(min-width:1025px) /* Desktop */
+{
+
+}
+
+/*flexbox for theme and 12 hour format */
+.flexIcon{
+    display:flex;
+    justify-content:space-between;
 }

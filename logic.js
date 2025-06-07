@@ -20,8 +20,8 @@ function callWhenToggle()
         count++;
         is12HourFormat=count%2===0;
         toggleSwitch.innerHTML = is12HourFormat
-        ? "Switch to 24 Hour Format"
-        : "Switch to 12 Hour Format";
+        ? "24 Hour Format"
+        : "12 Hour Format";
 }
     toggleSwitch.addEventListener("click",callWhenToggle);
 
@@ -68,7 +68,7 @@ function funcTheme()
 {
     if(countTheme%2===0)
     {
-        theme.innerHTML="Switch to Light Mode";
+        theme.innerHTML="Light Mode";
         //Styles for Dark theme here:
         document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1744462071047-34c6b661d3a1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
         quote.style.color="white";
@@ -76,7 +76,7 @@ function funcTheme()
     }
 
     else{
-        theme.innerHTML="Switch to Dark Mode";
+        theme.innerHTML="Dark Mode";
         //Styles for Light theme here:
         document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1542401886-65d6c61db217?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
         quote.style.color="rgba(54, 22, 1,0.9)";
@@ -87,4 +87,31 @@ function funcTheme()
 }
 
 theme.addEventListener("click",funcTheme);
+
+function updateTwelveHourFormatForMobile()
+{
+    const twelve=document.querySelector(".toggleButton");
+    const mobileTheme=document.getElementById("toggleTheme");
+
+    if(window.innerWidth<=320)
+    {
+        twelve.textContent="12 Hour Format";
+        mobileTheme.textContent="Dark Mode";
+    }
+
+    else if(window.innerWidth>320&&window.innerWidth<=1024)
+    {
+        twelve.textContent="12 Hour Format";
+        mobileTheme.textContent="Dark Mode";
+    }
+
+    else{
+        twelve.textContent="Switch to 12 Hour Format";
+        mobileTheme.textContent="Switch to Dark Mode";
+    }
+}
+
+window.addEventListener('load', updateTwelveHourFormatForMobile);
+window.addEventListener('resize', updateTwelveHourFormatForMobile);
+
 
