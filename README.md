@@ -37,8 +37,8 @@ A sleek, animated, and responsive digital clock that shows the current time with
 
 ## 📷 Screenshots
 
-![Preview (Mobile View )](https://github.com/learneranuprash/Date_And_Time/media/Portrait_Project.png)  
-![Preview (Desktop View )](https://github.com/learneranuprash/Date_And_Time/media/Landscape_project.png)  
+![Preview (Mobile View )]([https://github.com/learneranuprash/Date_And_Time/media/Portrait_Project.png](https://github.com/LearnerAnuprash/Date_And_Time/blob/main/media/Portrait_Project.png))  
+![Preview (Desktop View )]([https://github.com/learneranuprash/Date_And_Time/media/Landscape_project.png](https://github.com/LearnerAnuprash/Date_And_Time/blob/main/media/Landscape_project.png))  
 
 ---
 
@@ -54,6 +54,7 @@ A sleek, animated, and responsive digital clock that shows the current time with
 ## 📁 Folder Structure
 
 📂 Date_And_Time/
+
 ├── 📄 index.html
 
 ├── 📄 style.css
