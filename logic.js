@@ -71,7 +71,7 @@ function funcTheme()
         theme.innerHTML="Light Mode";
         //Styles for Dark theme here:
         document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1744462071047-34c6b661d3a1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
-        quote.style.color="white";
+        quote.style.color="rgba(255, 255, 255, 0.9)";
 
     }
 
@@ -79,7 +79,15 @@ function funcTheme()
         theme.innerHTML="Dark Mode";
         //Styles for Light theme here:
         document.body.style.backgroundImage="url('https://images.unsplash.com/photo-1542401886-65d6c61db217?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')";
-        quote.style.color="rgba(54, 22, 1,0.9)";
+        
+        if(window.innerWidth<=320)
+        {
+        quote.style.color="rgba(255, 255, 255, 0.9)";
+        }
+
+        else{
+            quote.style.color="rgba(54, 22, 1,0.9)";
+        }
     }
 
     countTheme++;

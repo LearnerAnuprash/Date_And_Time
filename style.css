@@ -135,20 +135,46 @@ button {
 
 /* Making Website Responsive*/
 
-@media(max-width:600px) /*Small devices */
+@media(max-width:450px) /*Small devices */
 {
+    .timeContainer{
+        flex-direction:column;
+        transform:scale(0.8);
+        margin-top:0px;
+    }
+
+    #quotePhrase{
+        display:block;
+        color:white;
+    }
+
+    blockquote{
+        padding:0px;
+        margin:0px;
+    }
+
+    body{
+        overflow:hidden;
+        min-width:262px;
+    }
+
     
 }
 
-@media(min-width:601px) and (max-width:1024px) /* Tablets */
+@media(min-width:450px) and (max-width:507px) /* mid level screen */
 {
-
+    .timeContainer{
+        transform:scale(0.7);
+    }
 }
 
-@media(min-width:1025px) /* Desktop */
+@media(min-width:507px) and (max-width:732px) /* mid level screen */
 {
-
+    .timeContainer{
+        transform:scale(0.8);
+    }
 }
+
 
 /*flexbox for theme and 12 hour format */
 .flexIcon{
