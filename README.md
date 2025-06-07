@@ -1,4 +1,4 @@
-# 🕒 Date & Time Web App
+# 🕒 Time Web App
 
 A sleek, animated, and responsive digital clock that shows the current time with options to toggle between 12-hour and 24-hour formats and switch between dark and light modes.
 
@@ -37,8 +37,8 @@ A sleek, animated, and responsive digital clock that shows the current time with
 
 ## 📷 Screenshots
 
-![Preview (Mobile View )](https://github.com/learneranuprash/Date_And_Time/Portrait_Project.png)  
-![Preview (Desktop View )](https://github.com/learneranuprash/Date_And_Time/Landscape_project.png)  
+![Preview (Mobile View )](https://github.com/learneranuprash/Date_And_Time/media/Portrait_Project.png)  
+![Preview (Desktop View )](https://github.com/learneranuprash/Date_And_Time/media/Landscape_project.png)  
 
 ---
 
@@ -55,8 +55,11 @@ A sleek, animated, and responsive digital clock that shows the current time with
 
 📂 Date_And_Time/
 ├── 📄 index.html
+
 ├── 📄 style.css
+
 ├── 📄 logic.js
+
 └── 📄 README.md
 ## 📬 Contact
 
